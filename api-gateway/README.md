@@ -8,8 +8,8 @@
 
 *Connect Kong Admin Api Using Konga*
 
- - curl -i http://localhost:8001 *or* Check Connect Kong Success [Kong Connect localhost:8001](http://localhost:8001)
- - Config Konga [Konga localhost:1337](http://localhost:1337)
+ - Check Connect Kong Success: curl -i http://localhost:8001 *or* [Kong Connect with http://localhost:8001](http://localhost:8001)
+ - Config Konga [Konga with http://localhost:1337](http://localhost:1337)
 
 ### Call Services
 
