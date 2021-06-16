@@ -11,3 +11,8 @@
  - curl -i http://localhost:8001 *or* Check Connect Kong Success [Kong Connect localhost:8001](http://localhost:8001)
  - Config Konga [Konga localhost:1337](http://localhost:1337)
 
+### Call Services
+
+ - Your IP Adress:8000/user-service === http://localhost:3001 => user-service
+ - Your IP Adress:8000/product-service === http://localhost:3002 => product-service
+
