@@ -1,6 +1,7 @@
 ## Product service with Consul Service Registry
 
 ```bash
+  - npm install
   - node server.js
 ```
 
