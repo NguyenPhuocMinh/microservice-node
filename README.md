@@ -29,23 +29,26 @@
 
 ### Run USER-SERVICE with NodeJs Using Express
 ```sh
-  - cd user-service and npm install and run node server.js or docker-compose up -d
+  - cd user-service and npm install and run node server.js or docker-compose up -d and docker run --net=host --name users user-service
 ```
 
-*Connect user service*
-  - http://localhost:3001
+- *Connect user service*
+  - http://localhost:8081
 
 ### Run PRODUCT-SERVICE with NodeJs Using Express
 ```sh
-  - cd product-service and npm install and run node server.js or docker-compose up -d
-```
-### Run ORDER-SERVICE with NodeJs Using Express
-```sh
-  - cd order-service and npm install and run node server.js or docker-compose up -d
+  - cd product-service and npm install and run node server.js or docker-compose up -d and docker run --net=host --name products product-service
 ```
 
-*Connect user service*
-  - http://localhost:3002
+- *Connect product service*
+  - http://localhost:8082
+### Run ORDER-SERVICE with NodeJs Using Express
+```sh
+  - cd order-service and npm install and run node server.js or docker-compose up -d and docker run --net=host --name orders order-service
+```
+
+- *Connect order service*
+  - http://localhost:8083
 
 ### Call Services With Kong Admin
 
