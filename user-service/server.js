@@ -14,16 +14,18 @@ const consul = require('consul')({
 consul.agent.service.register({
   id: 'user-service',
   name: 'user-service',
-  port: 3001,
+  port: 8081,
   address: address,
   check: {
-    http: `http://${address}:3001/health`,
+    http: `http://${address}:8081/health`,
     interval: '10s',
     timeout: '3s',
   }
 }, (err) => {
   if (err) {
     throw err;
+  } else {
+    console.log("User service connect to consul successfully!")
   }
 })
 
@@ -41,8 +43,12 @@ app.get("/", (req, res) => {
   res.status(200).send({ message: 'Welcome to User Service!' })
 })
 
+app.get("/user/info", (req, res) => {
+  res.status(200).send({ name: 'Minh Nguyen', position: 'dev' })
+})
+
 const server = http.createServer(app);
 
-server.listen(3001, () => {
-  console.log("User service is run on port 3001")
+server.listen(8081, () => {
+  console.log("User service is run on port 8081")
 })

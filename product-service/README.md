@@ -11,6 +11,12 @@
   - docker-compose up -d --build
 ```
 
+### Run docker file
+
+```bash
+  - docker run --network host -it -p 8082:80 product-service
+```
+
 ##### Run example
 
 ```sh

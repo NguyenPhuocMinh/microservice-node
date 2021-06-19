@@ -10,9 +10,14 @@
 ```bash
   - docker-compose up -d --build
 ```
+### Run docker file
+
+```bash
+  - docker run --network host -it user-service
+```
 
 ##### Run example
 
 ```sh
-  - curl -i http://localhost:3001
+  - curl -i http://localhost:8081
 ```

@@ -1,4 +1,4 @@
-version: "2.1"
+version: "3"
 
 networks:
   kong-net:
@@ -15,7 +15,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - /api-gateway:/var/lib/postgresql/data
+      - /var/folder:/var/lib/postgresql/data
     networks:
       - kong-net
 

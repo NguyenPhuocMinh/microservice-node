@@ -13,6 +13,7 @@
 
 ### Call Services
 
- - Your IP Adress:8000/user-service === http://localhost:3001 => user-service
- - Your IP Adress:8000/product-service === http://localhost:3002 => product-service
+ - Your IP Adress:8000/user-service === http://localhost:8081 => user-service
+ - Your IP Adress:8000/product-service === http://localhost:8082 => product-service
+ - Your IP Adress:8000/order-service === http://localhost:8083 => order-service
 
